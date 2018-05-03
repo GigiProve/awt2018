@@ -5,6 +5,7 @@ import enumeration.Role;
 public class User {
 	private String username;
 	private String password;
+	private String passwordConfirm;
 	private String mail;
 	private Role typeOfUser;
 	
@@ -31,5 +32,11 @@ public class User {
 	}
 	public void setTypeOfUser(Role typeOfUser) {
 		this.typeOfUser = typeOfUser;
+	}
+	public String getPasswordConfirm() {
+		return passwordConfirm;
+	}
+	public void setPasswordConfirm(String passwordConfirm) {
+		this.passwordConfirm = passwordConfirm;
 	}
 }
